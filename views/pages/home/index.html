@@ -1,0 +1,15 @@
+{% extends "layouts/default.html" %}
+{% block content %}
+<section>
+    <div class="wrapper">
+      <div class="content">
+        {% for allEntry in entries %}
+          <div style="padding-left:20px">
+            <h1>{{allEntry.title}}</h1>
+            {{allEntry.short_description}}
+          </div>
+        {% endfor %}
+      </div>
+    </div>
+</section>
+{% endblock %}
